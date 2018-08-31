@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" >Home</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="academics.html" class="active">Academics</a>
+  <a href="registration.html">Registration</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+  <div class="container-fluid table table-dark">
+  </div>
+  
+  <div class="col-sm-1">
+  </div>  
+
+  <div class="col-sm-10 container-fluid table-dark">
+    <p>At the University of Chicago, students learn not what to think, but how. In an atmosphere of free and open inquiry, students and professors debate, collaborate, and investigate while challenging assumptions—and one another. Rooted in rigorous inquiry, UChicago’s unique education transforms individuals, preparing and empowering them to make a positive impact on the world.</p>
+
+    <h3>Academic programs:</h3>
+
+  <!--  
+  <ul>
+    <li>Economics</li>
+    <li>Engineering</li> 
+    <li>Exact Sciences</li> 
+  </ul>
+  -->
+  
+  <div class="row">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Economics</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Engineering</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Exact Sciences</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <ul>
+            <li>Actuary</li>
+            <li>Financial</li> 
+            <li>Economist</li> 
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <ul>
+            <li>Chemical Engineer</li>
+            <li>Computer Engineer</li> 
+            <li>Petroleum Engineer</li> 
+          </ul>          
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <ul>
+            <li>Biology</li>
+            <li>Physics</li> 
+            <li>Mathematics</li> 
+          </ul>           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-1">
+  </div>
+
+</body>
+</html>
