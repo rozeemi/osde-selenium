@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 public class Testeador extends BaseTest{
 
-	@Test
+	
 	public void testearEntorno() {
 		System.out.print("TEsteando");
 		/*driver.get("file:///C:/Users/rmamani/eclipse-workspace/osde-selenium/drivers/web-demo-334d664191b71bd14366019c0df151644e75629d/university/login.html");

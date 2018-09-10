@@ -26,19 +26,18 @@ public class TestChromeBrowser extends BaseTest{
 		
 		portal = new Portal(this.driverTest);
 		portal.ingresarASuaPortal();
+		portal.esperar(2000);
 		unAfiliado = new Afiliado("Maravilla Luis");
-		
 		portal.buscarAfiliado(unAfiliado.getName());
 		
-		portal.buscarUnServicio("Solicitar Reintegro");
 		
 		
-		servicioReintegro = new SolicitarReintegro(this.driverTest);
-		
+		servicioReintegro = new SolicitarReintegro(portal.buscarUnServicio("Solicitar Reintegro"));
 		servicioReintegro.esperar(6000);
 		servicioReintegro.imprimirBeneficiarios();
 		servicioReintegro.completarDatosFactura();
-		
+		String codigoPrestacion = "870100";
+		servicioReintegro.elegirProfesional(codigoPrestacion);
 	}
 	
 }

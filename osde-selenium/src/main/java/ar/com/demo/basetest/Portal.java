@@ -38,7 +38,7 @@ public class Portal extends PageObject {
 	
 
 
-	public void buscarUnServicio(String unServicio) {
+	public WebDriver buscarUnServicio(String unServicio) {
 		this.getDriver().findElement(By.id("collapsableLeftContainer")).click();
 		campoServicio = this.getDriver().findElement(By.id("servicesSearchInput"));
 		campoServicio.sendKeys(unServicio);
@@ -46,6 +46,6 @@ public class Portal extends PageObject {
 		this.getDriver().findElement(By.xpath("//body//li[1]/a/b")).click();
 		this.esperar(6500);
 		System.out.println("Ingreso al Servicio: "+ unServicio);
-	
+		return this.getDriver();
 	}
 }

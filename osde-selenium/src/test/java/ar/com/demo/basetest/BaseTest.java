@@ -26,13 +26,15 @@ public class BaseTest {
 		System.setProperty("webdriver.chrome.driver", 
 				"drivers/chromedriver.exe");
 		
-		String extFilePath = "C:\\Users\\rmamani\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\ocgghcnnjekfpbmafindjmijdpopafoe\\0.7.0_0.crx";
+		String ranorex_selocity = "C:\\Users\\rmamani\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\ocgghcnnjekfpbmafindjmijdpopafoe\\0.7.0_0.crx";
+		String XPath_Helper= "C:\\Users\\rmamani\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\hgimnogjllphhhkhlmebbmlgjoejdpjl\\2.0.2_0.crx";
 		//ChromeOptions 
 		options = new ChromeOptions();
-		options.addExtensions(new File(extFilePath));
-		
+		options.addExtensions(new File(ranorex_selocity));
+		options.addExtensions(new File(XPath_Helper));
 		driverTest = new ChromeDriver(options);
 		driverTest.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
 	}
 	
 	@After
